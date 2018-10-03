@@ -2,7 +2,7 @@ import React from 'react';
 const About = (props) => {
 
     return(
-        <h1 className="about-position">Hello There!</h1>
+        <h1 className="about-position">THIS IS A TEST DAMMIT</h1>
     );
 }
 
