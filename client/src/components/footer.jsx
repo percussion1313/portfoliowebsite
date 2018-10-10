@@ -1,11 +1,13 @@
 import React from 'react';
 const BottomText = (props) => {
 
-    return(
+    return (
         <React.Fragment>
-            <footer>
-                <p>Test</p>
-            </footer>
+            <div className="row">
+                <footer>
+                    <p>Test</p>
+                </footer>
+            </div>
         </React.Fragment>
     );
 }

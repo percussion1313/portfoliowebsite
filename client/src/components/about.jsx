@@ -1,8 +1,15 @@
 import React from 'react';
+import Footer from './footer'
+
 const About = (props) => {
 
-    return(
-        <h1 className="about-position">THIS IS A TEST DAMMIT</h1>
+    return (
+        <React.Fragment>
+            <div>
+                <h1 className="about-position">Welcome to my page. She's a work in progress</h1>
+            </div>
+            <Footer />
+        </React.Fragment>
     );
 }
 

@@ -1,15 +1,36 @@
-body{
-    font-family: 'Poppins', sans-serif;
-    width: 100%;
+html {
+	height: 100%;
 }
 
-nav {
+body{
+    font-family: 'Poppins', sans-serif;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+}
+
+nav{
+	background-color: black;
+	opacity: 80% ;
+    opacity: .7;
+	transition: opacity .7s ease-out;
+	-moz-transition: opacity .7s ease-out;
+    -webkit-transition: opacity .7s ease-out;
+    -o-transition: opacity .7s ease-out;
+}
+
+
+
+#homepagebg {
 	color: #fff;
-	background: linear-gradient(-45deg, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
+	background: linear-gradient(-45deg, black, white);
+	background-size: 500% 500%;
+	-webkit-animation: Gradient 30s ease infinite;
+	-moz-animation: Gradient 30s ease infinite;
+	animation: Gradient 30s ease infinite;
+	padding:0;
+	background-repeat: no-repeat;
+	  background-attachment: fixed;
 }
 
 @-webkit-keyframes Gradient {
@@ -49,6 +70,35 @@ nav {
 }
 
 .about-position{
-	margin-top: 4em;
+	margin-top: 10em;
+	margin-bottom: 10em;
 	text-align: center;
 }
+
+.bgphoto{
+	margin-top: 7em;
+	padding: 0;
+}
+
+.hvr-bounce-to-bottom {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px white(0, 0, 0, 0);
+	position: relative;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+  }
+
+  footer {
+	bottom: 0;
+	background-color: black;
+	height: 60px;
+	width: 100%;
+	color: white;
+	margin-left:  0;
+	margin-right: 0;
+	  }
