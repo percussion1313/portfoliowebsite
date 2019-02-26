@@ -19,10 +19,10 @@ const NavigationStation = (props) => {
                             <Link to="contact" className="nav-link text-light ml-5" href="#">Contact</Link>
                         </li>
                         <li className="nav-item d-flex justify-content-center">
-                            <a className="nav-link text-light ml-5" href="#">Projects</a>
+                            <Link to="projects" className="nav-link text-light ml-5" href="#">Projects</Link>>
                         </li>
                         <li className="nav-item d-flex justify-content-center">
-                            <a className="nav-link text-light ml-5" href="#">Doodles</a>
+                            <Link to="doodles" className="nav-link text-light ml-5" href="#">Doodles</Link>>
                         </li>
                     </ul>
                 </div>

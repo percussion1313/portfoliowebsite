@@ -1,63 +1,57 @@
 import React, { Component } from 'react';
-import { sendContactEmail } from '../../services/contact';
+import { sendContactEmail } from '../../services/contact'
 
 class Contact extends Component {
     constructor(props) {
-        super(props)
+        super(props);
+
         this.state = {
             name: '',
             email: '',
-            message: '',
+            message:''
         }
-    }
+    };
 
     handleName(name) {
-        this.setState({
-            name
-        })
+        this.setState({name});
     }
+
     handleEmail(email) {
-        this.setState({
-            email
-        })
+        this.setState({email});
     }
+
     handleMessage(message) {
-        this.setState({
-            message
-        })
+        this.setState({message});
     }
+
     handleSubmit(e) {
         e.preventDefault();
         sendContactEmail(this.state.name, this.state.email, this.state.message)
-            .then(() => {
-                //redirect to homepage
-                this.props.history.push('/');
-            }).catch((err) => {
-                console.log(err);
-            })
+        .then(() => {
+
+        }).catch((err) => {
+            console.log('Oh No!')
+        })
     }
 
     render() {
         return (
-            <div className="container padding-top margin-bottom" >
-                <form onSubmit={(e) => this.handleSubmit(e)}>
+            <div className="margin-top">
+                <form onSubmit={ (e) => this.handleSubmit(e)}>
                     <div className="form-group">
-                        <input htmlFor="name" placeholder="Name" onChange={(e) => this.handleName(e.target.value)} name="name" type="text" className="form-control rounded-0 col-8 mx-auto" required />
+                        <input placeholder="Name" onChange={(e) => this.handleName(e.target.value)} id="name" type="text" className="form-control"/>
                     </div>
                     <div className="form-group">
-                        <input htmlFor="email" placeholder="Email" onChange={(e) => this.handleEmail(e.target.value)} email="mail" type="email" className="form-control rounded-0 col-8 mx-auto" required />
+                        <input placeholder="Email"  onChange={(e) => this.handleEmail(e.target.value)} id="email" type="text" className="form-control" required/>
                     </div>
-                    <div className="form-group">
-                        <textarea onChange={(e) => this.handleMessage(e.target.value)} cols="30" rows="10" className="form-control rounded-0 col-8 mx-auto"></textarea>
-                        <input type="submit" className="btn btn-success d-flex justify-content-center col-3 rounded-0 mx-auto mt-2" />
-                    </div>
-
+                   <div className="form-group">
+                        <textarea rows="6" className="form-control"></textarea>
+                        <input onChange={(e) => this.handleMessage(e.target.value)} type="submit" className="btn btn-primary"/>
+                   </div>
                 </form>
-                <div className="d-flex justify-content-center map position-relative">
-                </div>
             </div>
-        );
+        )
     }
 }
 
-export default Contact
+export default Contact;
