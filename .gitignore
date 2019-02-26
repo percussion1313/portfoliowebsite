@@ -24,3 +24,6 @@ lib
 .vscode
 
 development.js
+
+.firebaserc
+/firebase.json
