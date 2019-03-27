@@ -1,11 +1,21 @@
-import React from 'react';
-import logo from './img/logofront.png'
+import React, { Component } from 'react';
+import logo from './img/newfakelogo3.png'
 import { Link } from 'react-router-dom';
 
-const NavigationStation = (props) => {
+// import React, { Component } from 'react';
 
-    return (
-        <React.Fragment>
+class NavigationStation extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+
+        };
+        
+    }
+
+    render() {
+        return (<React.Fragment>
             <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -19,17 +29,20 @@ const NavigationStation = (props) => {
                             <Link to="contact" className="nav-link text-light ml-5" href="#">Contact</Link>
                         </li>
                         <li className="nav-item d-flex justify-content-center">
-                            <Link to="projects" className="nav-link text-light ml-5" href="#">Projects</Link>>
+                            <Link to="projects" className="nav-link text-light ml-5" href="#">Projects</Link>
                         </li>
                         <li className="nav-item d-flex justify-content-center">
-                            <Link to="doodles" className="nav-link text-light ml-5" href="#">Doodles</Link>>
+                            <Link to="doodles" className="nav-link text-light ml-5" href="#">Doodles</Link>
                         </li>
                     </ul>
                 </div>
-                <Link to="/"><img  className="d-flex justify-content-center position-absoulte" src={logo} alt="Placeholder" width="80px"/></Link>
+                <div className="float-left">
+                <Link to="/"><img  className="d-flex justify-content-centerc" src={logo} alt="Placeholder" width="70px"/></Link>
+                </div>
+                
             </nav>
-        </React.Fragment>
-    );
+        </React.Fragment>)
+    }
 }
 
 export default NavigationStation;

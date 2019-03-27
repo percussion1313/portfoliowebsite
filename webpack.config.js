@@ -2,6 +2,7 @@ const path = require('path');
 
 const CLIENT_DEST = path.join(__dirname, './client/dist');
 
+
 module.exports = {
     entry: ['babel-polyfill', './client/src/index.js'],
     output: { path: CLIENT_DEST, filename: 'bundle.js' },
@@ -36,10 +37,17 @@ module.exports = {
                         outputPath: 'docs'
                     }
                 }
-            }
+            },
+            {
+                test: /\.svg$/,
+                loader: 'svg-inline-loader'
+            },
         ]
     },
     resolve: {
         extensions: ['.js', '.jsx']
-    }
+    },
+    externals: {
+        jquery: 'jQuery'
+      }
 }
