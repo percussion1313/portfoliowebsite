@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Background from './img/printtoscreen.jpg'
+import Background from './img/printtoscreenprint.svg'
 import { render } from 'react-dom';
-// import { About } from './about'
+import ReactSVG from 'react-svg'
+
 import Footer from './footer'
 import { get } from 'https';
 
