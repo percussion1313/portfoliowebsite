@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link, Loader } from 'react-router-dom';
 import { HashRouter } from 'react-router-dom';
-import NavigationStation from './navbar'
+import Navbar from './navbar'
 import Homepage from './homepage';
 import Contact from './contact';
 import About from './about';
@@ -18,17 +18,38 @@ class Navigation extends Component {
         super(props)
 
     }
-    
+
     render() {
         return (
             <HashRouter>
                 <Fragment>
-                    <NavigationStation />
-                    <Homepage />
+                    <Navbar />
+                    <Homepage
+                        title="Homepage"
+                        id="homepage"
+                    />
+                    <About
+                        title="About"
+                        id="about"
+                    />
+                    <Projects
+                        title="Projects"
+                        id="projects"
+                    />
+                    <Doodles
+                        title=" "
+                        id="doodles"
+                    />
+                    <Contact
+                        title="Section 5"
+                        id="contact"
+                    />
+                    {/* <Homepage />
                     <About />
                     <Projects />
                     <Doodles />
                     <Contact />
+                    <Footer /> */}
                     <Footer />
                 </Fragment>
             </HashRouter>

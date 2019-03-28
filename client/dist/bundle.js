@@ -37036,11 +37036,26 @@ var Navigation = function (_Component) {
                     _react.Fragment,
                     null,
                     _react2.default.createElement(_navbar2.default, null),
-                    _react2.default.createElement(_homepage2.default, null),
-                    _react2.default.createElement(_about2.default, null),
-                    _react2.default.createElement(_projects2.default, null),
-                    _react2.default.createElement(_doodles2.default, null),
-                    _react2.default.createElement(_contact2.default, null),
+                    _react2.default.createElement(_homepage2.default, {
+                        title: 'Homepage',
+                        id: 'homepage'
+                    }),
+                    _react2.default.createElement(_about2.default, {
+                        title: 'About',
+                        id: 'about'
+                    }),
+                    _react2.default.createElement(_projects2.default, {
+                        title: 'Projects',
+                        id: 'projects'
+                    }),
+                    _react2.default.createElement(_doodles2.default, {
+                        title: ' ',
+                        id: 'doodles'
+                    }),
+                    _react2.default.createElement(_contact2.default, {
+                        title: 'Section 5',
+                        id: 'contact'
+                    }),
                     _react2.default.createElement(_footer2.default, null)
                 )
             );
@@ -40859,20 +40874,21 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 // import React, { Component } from 'react';
 
-var NavigationStation = function (_Component) {
-    _inherits(NavigationStation, _Component);
+var Navbar = function (_Component) {
+    _inherits(Navbar, _Component);
 
-    function NavigationStation(props) {
-        _classCallCheck(this, NavigationStation);
+    function Navbar() {
+        _classCallCheck(this, Navbar);
 
-        var _this = _possibleConstructorReturn(this, (NavigationStation.__proto__ || Object.getPrototypeOf(NavigationStation)).call(this, props));
-
-        _this.state = {};
-
-        return _this;
+        return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
     }
 
-    _createClass(NavigationStation, [{
+    _createClass(Navbar, [{
+        key: 'scrollToTop',
+        value: function scrollToTop() {
+            _reactScroll.animateScroll.scrollToTop();
+        }
+    }, {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
@@ -40972,10 +40988,10 @@ var NavigationStation = function (_Component) {
         }
     }]);
 
-    return NavigationStation;
+    return Navbar;
 }(_react.Component);
 
-exports.default = NavigationStation;
+exports.default = Navbar;
 
 /***/ }),
 /* 413 */

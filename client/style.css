@@ -169,3 +169,15 @@ nav{
 		.contact-page{
 			height: 1080px;
 		}
+
+		.nav-item:hover {
+			color: black;
+			cursor: pointer;
+		  }
+
+		  .nav-item {
+			display: inline;
+			margin-left: 2rem;
+			color: #333;
+		  }
+		  

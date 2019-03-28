@@ -5,15 +5,10 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 // import React, { Component } from 'react';
 
-class NavigationStation extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-
-        };
-
-    }
+class Navbar extends Component {
+    scrollToTop() {
+        scroll.scrollToTop();
+      };
 
     render() {
         return (<React.Fragment>
@@ -83,4 +78,4 @@ class NavigationStation extends Component {
     }
 }
 
-export default NavigationStation;
+export default Navbar;
