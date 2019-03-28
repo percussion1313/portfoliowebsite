@@ -19,11 +19,17 @@ class Navigation extends Component {
         return (
             <Router>
                 <Fragment>
-                <NavigationStation />
+                    <NavigationStation />
+                    <Homepage />
+                    <About />
+                    <Projects />
+                    <Doodles />
+                    <Contact />
+                    <Footer />
                     <Switch>
                         <Route exact path="/" component={Homepage} />
-                        <Route path ="/contact" component={Contact} />
-                        <Route path ="/about" component={About} />
+                        <Route path="/contact" component={Contact} />
+                        <Route path="/about" component={About} />
                         <Route path="/projects" component={Projects} />
                         <Route path="/doodles" component={Doodles} />
                     </Switch>

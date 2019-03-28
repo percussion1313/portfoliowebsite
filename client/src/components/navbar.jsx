@@ -26,13 +26,13 @@ class NavigationStation extends Component {
                             <Link to="about" className="nav-link text-light ml-5" href="#">About</Link>
                         </li>
                         <li className="nav-item d-flex justify-content-center">
-                            <Link to="contact" className="nav-link text-light ml-5" href="#">Contact</Link>
-                        </li>
-                        <li className="nav-item d-flex justify-content-center">
                             <Link to="projects" className="nav-link text-light ml-5" href="#">Projects</Link>
                         </li>
                         <li className="nav-item d-flex justify-content-center">
                             <Link to="doodles" className="nav-link text-light ml-5" href="#">Doodles</Link>
+                        </li>
+                        <li className="nav-item d-flex justify-content-center">
+                            <Link to="contact" className="nav-link text-light ml-5" href="#">Contact</Link>
                         </li>
                     </ul>
                 </div>

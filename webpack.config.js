@@ -41,10 +41,7 @@ module.exports = {
             {
                 test: /\.(svg)$/,
                 loader: 'svg-inline-loader'
-            },
-            {  test: /\.scss$/,
-                loaders: ['style-loader', 'css-loader', 'sass-loader'],
-                include: path.resolve(__dirname, '../'),}
+            }
             
         ]
     },

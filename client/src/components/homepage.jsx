@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import Background from './img/printtoscreenprint.svg'
+import { About } from './about'
+import Background from './img/printtoscreen2.png'
 import { render } from 'react-dom';
-import ReactSVG from 'react-svg'
 
 import Footer from './footer'
-import { get } from 'https';
 
 class HelloWorld extends Component {
 
@@ -24,9 +23,6 @@ class HelloWorld extends Component {
                     <div id="homepagebg" className="d-flex justify-content-center col-12">
                         <img className="bgphoto img-fluid" src={Background} alt="" />
                     </div>
-                </div>
-                <div className="about-footer">
-                    <Footer />
                 </div>
             </React.Fragment>
         )
