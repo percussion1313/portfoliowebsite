@@ -12,7 +12,7 @@ class Projects extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="about-position">Nothing to see here boys</div>
+                <div className="about-position project-page">Nothing to see here boys</div>
             </React.Fragment>
         )
     }

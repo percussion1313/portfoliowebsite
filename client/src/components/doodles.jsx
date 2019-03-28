@@ -12,7 +12,7 @@ class Doodles extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="about-position">MY DOODLES GO HERE</div>
+                <div className="about-position doodle-page">MY DOODLES GO HERE</div>
             </React.Fragment>
         )
     }

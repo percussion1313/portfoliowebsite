@@ -36,7 +36,7 @@ class Contact extends Component {
 
     render() {
         return (
-            <div className="margin-top">
+            <div className="margin-top contact-page">
                 <form onSubmit={ (e) => this.handleSubmit(e)}>
                     <div className="form-group">
                         <input placeholder="Name" onChange={(e) => this.handleName(e.target.value)} id="name" type="text" className="form-control"/>

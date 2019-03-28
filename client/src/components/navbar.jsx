@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './img/newfakelogo3.png'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 // import React, { Component } from 'react';
 
@@ -11,35 +12,72 @@ class NavigationStation extends Component {
         this.state = {
 
         };
-        
+
     }
 
     render() {
         return (<React.Fragment>
             <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
+                <Link to="/"><img className="mx-auto" src={logo} alt="Placeholder" width="70px" onClick={this.scrollToTop} /></Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse order-1" id="navbarNav">
+                <div className="collapse navbar-collapse order-3" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item d-flex justify-content-center">
-                            <Link to="about" className="nav-link text-light ml-5" href="#">About</Link>
+                            <Link
+                                activeClass="active"
+                                to="about"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                                className="nav-link text-light ml-5"
+                            >
+                                About
+                            </Link>
                         </li>
                         <li className="nav-item d-flex justify-content-center">
-                            <Link to="projects" className="nav-link text-light ml-5" href="#">Projects</Link>
+                            <Link
+                                activeClass="active"
+                                to="projects"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                                className="nav-link text-light ml-5"
+                            >
+                                Projects
+                            </Link>
                         </li>
                         <li className="nav-item d-flex justify-content-center">
-                            <Link to="doodles" className="nav-link text-light ml-5" href="#">Doodles</Link>
+                            <Link
+                                activeClass="active"
+                                to="doodles"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                                className="nav-link text-light ml-5"
+                            >
+                                Doodles
+                            </Link>
                         </li>
                         <li className="nav-item d-flex justify-content-center">
-                            <Link to="contact" className="nav-link text-light ml-5" href="#">Contact</Link>
+                            <Link
+                                activeClass="active"
+                                to="contact"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                                className="nav-link text-light ml-5"
+                            >
+                                Contact
+                            </Link>
                         </li>
                     </ul>
                 </div>
-                <div className="float-left">
-                <Link to="/"><img  className="d-flex justify-content-centerc" src={logo} alt="Placeholder" width="70px"/></Link>
-                </div>
-                
             </nav>
         </React.Fragment>)
     }

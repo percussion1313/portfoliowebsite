@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { About } from './about'
-import Background from './img/printtoscreen2.png'
+import Background from './img/printtoscreenfinal.png'
 import { render } from 'react-dom';
 
 import Footer from './footer'
