@@ -5,7 +5,7 @@ const About = (props) => {
 
     return (
         <React.Fragment>
-            <div className="about-page">
+            <div id="about-page">
                 <h1 className="about-position">Welcome to my page.</h1>
             </div>
         </React.Fragment>

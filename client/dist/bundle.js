@@ -6684,7 +6684,7 @@ var About = function About(props) {
         null,
         _react2.default.createElement(
             'div',
-            { className: 'about-page' },
+            { id: 'about-page' },
             _react2.default.createElement(
                 'h1',
                 { className: 'about-position' },
@@ -40925,7 +40925,8 @@ var Navbar = function (_Component) {
                                         smooth: true,
                                         offset: -70,
                                         duration: 500,
-                                        className: 'nav-link text-light ml-5'
+                                        className: 'nav-link text-light ml-5',
+                                        onclick: $('[about-page]').animatescroll()
                                     },
                                     'About'
                                 )
@@ -43005,6 +43006,10 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _cooldesign = __webpack_require__(431);
+
+var _cooldesign2 = _interopRequireDefault(_cooldesign);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -43026,15 +43031,16 @@ var Doodles = function (_Component) {
     }
 
     _createClass(Doodles, [{
-        key: "render",
+        key: 'render',
         value: function render() {
             return _react2.default.createElement(
                 _react2.default.Fragment,
                 null,
                 _react2.default.createElement(
-                    "div",
-                    { className: "about-position doodle-page" },
-                    "MY DOODLES GO HERE"
+                    'div',
+                    { className: 'mx-auto about-position doodle-page' },
+                    'MY DOODLES GO HERE',
+                    _react2.default.createElement('img', { 'class': 'float-right img-responsive img-fluid side-pic', src: _cooldesign2.default, alt: '' })
                 )
             );
         }
@@ -43044,6 +43050,12 @@ var Doodles = function (_Component) {
 }(_react.Component);
 
 exports.default = Doodles;
+
+/***/ }),
+/* 431 */
+/***/ (function(module, exports) {
+
+module.exports = "/dist/images/2df455a31db26201f5a6fdf99ec123fb.png";
 
 /***/ })
 /******/ ]);

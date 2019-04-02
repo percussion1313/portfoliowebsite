@@ -6,6 +6,8 @@ import { Link, animateScroll as scroll } from "react-scroll";
 // import React, { Component } from 'react';
 
 class Navbar extends Component {
+
+    
     scrollToTop() {
         scroll.scrollToTop();
       };
@@ -28,6 +30,7 @@ class Navbar extends Component {
                                 offset={-70}
                                 duration={500}
                                 className="nav-link text-light ml-5"
+                                onclick={$('[about-page]').animatescroll()}
                             >
                                 About
                             </Link>
